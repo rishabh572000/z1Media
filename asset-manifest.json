@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/rishabh572000/z1Media.git/static/css/main.b0df755f.css",
-    "main.js": "/rishabh572000/z1Media.git/static/js/main.5ab19720.js",
-    "static/js/787.5c567acf.chunk.js": "/rishabh572000/z1Media.git/static/js/787.5c567acf.chunk.js",
-    "static/media/logo.svg": "/rishabh572000/z1Media.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/rishabh572000/z1Media.git/index.html",
-    "main.b0df755f.css.map": "/rishabh572000/z1Media.git/static/css/main.b0df755f.css.map",
-    "main.5ab19720.js.map": "/rishabh572000/z1Media.git/static/js/main.5ab19720.js.map",
-    "787.5c567acf.chunk.js.map": "/rishabh572000/z1Media.git/static/js/787.5c567acf.chunk.js.map"
+    "main.css": "/z1Media/static/css/main.b0df755f.css",
+    "main.js": "/z1Media/static/js/main.9c9d07d6.js",
+    "static/js/787.5c567acf.chunk.js": "/z1Media/static/js/787.5c567acf.chunk.js",
+    "static/media/logo.svg": "/z1Media/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/z1Media/index.html",
+    "main.b0df755f.css.map": "/z1Media/static/css/main.b0df755f.css.map",
+    "main.9c9d07d6.js.map": "/z1Media/static/js/main.9c9d07d6.js.map",
+    "787.5c567acf.chunk.js.map": "/z1Media/static/js/787.5c567acf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0df755f.css",
-    "static/js/main.5ab19720.js"
+    "static/js/main.9c9d07d6.js"
   ]
 }
