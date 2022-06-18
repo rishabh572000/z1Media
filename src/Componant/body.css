@@ -1,0 +1,62 @@
+.staticdata{
+    display: flex;
+    justify-content: space-between;
+}
+.bodyleft{
+    height: 80vh;
+    
+}
+.bodymiddleSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .item{
+    width: 350px;
+    height: auto;
+    padding-left: 20px;
+    background-color: blue;
+    text-align: left;
+    padding-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+.card .item:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card #head{
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    margin-top: -10px;
+}
+.card p{
+    color: aliceblue;
+    font-size: 18px;
+}
+.card h1{
+    color: aliceblue;
+    margin: -20px 0 0 0;
+    padding: 0;
+    font-weight: 800;
+    
+}
+.graph{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.graphLeft{
+    width: 40%;
+    padding-bottom: 40px;
+}
+.graphRight{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: space-around;
+}
