@@ -1,6 +1,12 @@
-import { MailOutlined, SettingOutlined, AppstoreOutlined } from '@ant-design/icons';
+import { HomeOutlined, TrophyOutlined, FileTextOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,Routes,
+  Link,
+} from "react-router-dom";
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -13,16 +19,37 @@ function getItem(label, key, icon, children, type) {
 }
 
 const items = [
-  getItem('Dashboard', 'sub1', <MailOutlined />, [
-    getItem('Classic', '1'),
+  getItem('Dashboard', 'sub1', <HomeOutlined />, [
+    getItem(<Link to="/cassis">Cassis</Link>, '1'),
     getItem('Minimal', '2'),
   ]),
-  getItem('Pages', 'sub2', <AppstoreOutlined />, [
+  getItem('Pages', 'sub2', <FileTextOutlined />, [
     getItem('User Login', '5'),
     getItem('User Registration', '6'),
-    getItem('Subscription', 'sub3', null, [getItem('Option 7', '7'), getItem('Option 8', '8')]),
+    getItem('Subscription', 'sub3', null, [getItem('Active', '7'), getItem('Expire', '8')]),
   ]),
-  getItem('Applications', 'sub4', <SettingOutlined />, [
+  getItem('Applications', 'sub4', <TrophyOutlined />, [
+    getItem('Option 9', '9'),
+    getItem('Option 10', '10'),
+    getItem('Option 11', '11'),
+    getItem('Option 12', '12'),
+  ]),
+  getItem('Ui Component', 'sub5', <TrophyOutlined />, [
+    getItem('Page One', '13'),
+    getItem('Page Two', '14'),
+  ]),
+  getItem('Widget', 'sub6', <TrophyOutlined />, [
+    getItem('Widget 9', '15'),
+    getItem('Widget 10', '16'),
+    getItem('Widget 11', '17'),
+    getItem('Widget 12', '18'),
+  ]),
+  getItem('Forms', 'sub7', <TrophyOutlined />, [
+    getItem('Leave', '19'),
+    getItem('Apragal', '20'),
+    getItem('Good work', '21'),
+  ]),
+  getItem('Charts', 'sub8', <TrophyOutlined />, [
     getItem('Option 9', '9'),
     getItem('Option 10', '10'),
     getItem('Option 11', '11'),
@@ -30,7 +57,7 @@ const items = [
   ]),
 ]; // submenu keys of first level
 
-const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
+const rootSubmenuKeys = ['sub1', 'sub2', 'sub4', 'sub5', 'sub6', 'sub7', 'sub8'];
 
 const MenuItem = () => {
   const [openKeys, setOpenKeys] = useState(['sub1']);
@@ -51,7 +78,8 @@ const MenuItem = () => {
       openKeys={openKeys}
       onOpenChange={onOpenChange}
       style={{
-        width: 256,
+        width: 256, 
+        position: 'sticky',
       }}
       items={items}
     />

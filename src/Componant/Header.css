@@ -8,8 +8,10 @@
     display: flex;
     justify-content: space-around;
     height:60px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(246, 245, 245);
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
     
 }
 .Header .left h1{
